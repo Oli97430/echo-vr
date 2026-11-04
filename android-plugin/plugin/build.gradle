@@ -1,0 +1,17 @@
+plugins { id 'com.android.library' }
+
+android {
+    namespace 'com.olivier.bhapticsgodot'
+    compileSdk 35
+    defaultConfig { minSdk 24 }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    compileOnly 'org.godotengine:godot:4.7.2.stable'
+    // L'AAR bHaptics est livré à côté dans l'export Godot (voir l'addon), pas embarqué ici.
+    compileOnly files('libs/bhaptics_manager.aar')
+}

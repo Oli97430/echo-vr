@@ -1,0 +1,29 @@
+# Godot
+.godot/
+*.translation
+export_credentials.cfg
+
+# Modèle de build Android installé depuis les export templates (~1,5 Go, régénérable)
+android/
+
+# Plugin Android : sorties Gradle et chemins locaux
+android-plugin/.gradle/
+android-plugin/build/
+android-plugin/plugin/build/
+android-plugin/local.properties
+
+# Binaires tiers à télécharger soi-même (voir README > Construire)
+addons/godotopenxrvendors/
+addons/bhaptics_godot/bin/*.aar
+android-plugin/plugin/libs/*.aar
+
+# Builds
+*.apk
+*.aab
+*.exe
+*.pck
+*.zip
+
+# Système
+Thumbs.db
+.DS_Store
