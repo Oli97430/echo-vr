@@ -146,9 +146,11 @@ Les réglages et les records sont stockés dans `user://echo.cfg`.
 
 ## Installer et jouer
 
+> Les builds prêts à l'emploi seront publiés dans les [Releases](../../releases). En attendant, construis-les depuis les sources : voir [Construire depuis les sources](#construire-depuis-les-sources).
+
 ### PCVR (Windows)
 
-1. Télécharge `EchoVR-PCVR-win64.zip` depuis les [Releases](../../releases) et décompresse-le.
+1. Récupère le build PCVR (`EchoVR.exe` + `libgodotopenxrvendors.dll`) et place les deux fichiers dans le même dossier.
 2. Lance le **bHaptics Player** Windows et allume le gilet.
 3. Connecte ton casque (Virtual Desktop, SteamVR ou Quest Link) en tant que runtime OpenXR.
 4. Lance `EchoVR.exe`.
@@ -157,7 +159,7 @@ Les réglages et les records sont stockés dans `user://echo.cfg`.
 
 1. Sur le casque, installe **bHaptics Player** depuis le Meta Horizon Store, accepte les permissions et appaire le gilet ([guide bHaptics](https://support.bhaptics.com/support/solutions/articles/150000209817-install-the-bhaptics-player-for-meta-quest)).
 2. Active le mode développeur du Quest.
-3. Télécharge `EchoVR.apk` depuis les [Releases](../../releases) et installe-le :
+3. Installe `EchoVR.apk` :
    ```bash
    adb install -r EchoVR.apk
    ```
